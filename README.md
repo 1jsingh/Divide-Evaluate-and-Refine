@@ -27,14 +27,15 @@ previous state-of-the-art by 8.7% in overall text-to-image alignment accuracy.
 <!-- <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2F1jsingh%2Fpaint2pix&text=Unleash%20your%20inner%20artist%20...%20synthesize%20amazing%20artwork%2C%20and%20realistic%20image%20content%20or%20simply%20perform%20a%20range%20of%20diverse%20real%20image%20edits%20using%20just%20coarse%20user%20scribbles.&hashtags=Paint2Pix%2CECCV2022"><img src="https://img.shields.io/badge/Share--white?style=for-the-badge&logo=Twitter" height=22.5></a> -->
 
 <p align="center">
-<img src="https://1jsingh.github.io/docs/divide-evaluate-and-refine/overview-iter-v1.png" width="800px"/>  
+<img src="./docs/overview-eval-v3.png" width="800px"/>  
+<img src="./docs/overview-iter-v1.png" width="800px"/>  
 <br>
-We propose a training-free decompositional framework which helps both better evaluate and gradually improve text-to-image alignment using iterative VQA feedback.
+We propose a training-free decompositional framework which helps both better evaluate (top) and gradually improve (bottom) text-to-image alignment using iterative VQA feedback.
 </p>
 
 ## Description   
 
-Official Implementation for our paper [Divide, Evaluate, and Refine: Evaluating and Improving Text-to-Image Alignment with Iterative VQA Feedback](https://1jsingh.github.io/divide-evaluate-and-refine]). 
+Official Implementation for our paper [Divide, Evaluate, and Refine: Evaluating and Improving Text-to-Image Alignment with Iterative VQA Feedback](https://1jsingh.github.io/divide-evaluate-and-refine). 
 
 ## Updates (Coming Soon)
 
