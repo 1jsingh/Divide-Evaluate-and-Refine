@@ -62,7 +62,7 @@ Official Implementation for our NeurIPS-2023 paper on [Divide, Evaluate, and Ref
 To set up the environment, please run:
 ```
 conda env create -f environment/environment.yml
-conda activate da_score
+conda activate dascore
 ```
 
 
