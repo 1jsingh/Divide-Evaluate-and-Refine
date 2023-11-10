@@ -109,7 +109,7 @@ Eval&Refine is available as a convenient [diffusers](https://github.com/huggingf
 
 * Quick Usage:
 ``` python
-from t2i_improve.pipeline_evaluate_and_refine import StableDiffusionEvaluatendRefinePipeline
+from t2i_improve.pipeline_evaluate_and_refine import StableDiffusionEvalAndRefinePipeline
 from t2i_eval.utils import generate_questions, VQAModel, compute_dascores
 
 # import openai api
@@ -117,7 +117,7 @@ import openai
 openai.api_key = "[Your OpenAI Key]"
 
 # define and load the Pipeline
-pipe = StableDiffusionEvaluatendRefinePipeline.from_pretrained("CompVis/stable-diffusion-v1-4", torch_dtype=torch.float16).to("cuda")
+pipe = StableDiffusionEvalAndRefinePipeline.from_pretrained("CompVis/stable-diffusion-v1-4", torch_dtype=torch.float16).to("cuda")
 # create vqa_model for DA-Score
 vqa_model = VQAModel()
 
@@ -133,6 +133,7 @@ Notes:
  * We provide two mechanisms for iterative refinement with Eval&Refine: 
     - Prompt-Weighting (PW)
     - Cross-Attention modulation (CA).
+    
     The use of the above can be controlled through `use_pw` and `use_ca` keywords while calling the pipeline. For e.g. to use Prompt-Weighting (PW) but not Cross-Attention modulation (CA), please use:
     ```python
     outputs = pipe.eval_and_refine(parsed_input, vqa_model, use_pw=True, use_ca=False,  max_update_steps=5)
