@@ -39,7 +39,7 @@ Official Implementation for our NeurIPS-2023 paper on [Divide, Evaluate, and Ref
 
 ## Updates
 
-* **(09/11/23)** Code for both evaluation and improvement of T2I generation is now available as a Diffusers pipeline.
+* **(09/11/23)** Code for both evaluation and improvement of T2I generation is now available as a [diffusers](https://github.com/huggingface/diffusers) pipeline.
 
 ## Quick Links
   * [Getting Started](#getting-started)
@@ -101,7 +101,7 @@ da_score, assertion_alignment_scores = compute_dascores([image], questions, vqa_
 <!-- ### Large-scale Evaluation -->
 
 ## Divide-Evaluate and Refine: Improving Text to Image Aligment
-Assertion/Question level alignment scores also provide a useful feedback to determine which parts of the input prompt are not being expressed in the final image generation. Eval&Refine uses this knowledge in order to propose a very simple yet effective iterative refinement process which gradually improves the quality of the final image outputs.
+Assertion/Question level alignment scores also provide a useful feedback to determine which parts of the input prompt are not being expressed in the final image generation. Eval&Refine uses this knowledge in order to propose a very simple yet effective iterative refinement process which gradually improves the quality of the final images.
 
 <!-- ### Usage -->
 
