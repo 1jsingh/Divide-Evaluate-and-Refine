@@ -1,0 +1,29 @@
+Lets define a decomposable caption format e.g. 
+1. Caption: a cat and a dog. Decomposable-Caption: "[a cat] and [a dog]", with decompositions in-order left to right "a cat" and "a dog"
+2. Caption: "A dog fetching a frisbee in a park."  Decomposable Caption: "[A dog] [fetching a frisbee] [in a park]",  with decompositions in-order left to right "a dog", "fetching a frisbee" and "in a park"
+
+Given a caption in decomposable format: {}. Provide the following as ordered-lists (left to right):
+Assertions: Express each decomposition as an assertion about the image. Each assertion should be a proper sentence but be as simple as possible.
+Questions: Express each assertion as a question about the image with (yes or no) answer.
+Entities: List of different entities in the caption.
+
+Examples format: 
+**Very Important** strictly adhere to the following format and outputs should be lists of **equal** lengths (except entities).
+Caption: "[A dog] [fetching a frisbee] [in a park]"
+
+Assertions:
+1. There is a dog in the image. 
+2. The dog is fetching a frisbee.
+3. The setting is in a park.
+
+Questions:
+1. Is there a dog in the image?
+2. Is the dog is fetching a frisbee?
+3. Is the setting of the image a park?
+
+Entities:
+1. dog
+2. frisbee
+3. park
+
+Answer as concisely as possible.

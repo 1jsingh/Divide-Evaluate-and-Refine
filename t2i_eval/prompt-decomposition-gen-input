@@ -1,0 +1,11 @@
+Given a caption: {}, provide the caption in decomposable-caption format, such that each decomposition only focuses on a simple and atomic concept.
+
+Example 1
+Caption: a cat and a dog. 
+Decomposable-Caption: [a cat] and [a dog]
+
+Example 2
+Caption: A dog fetching a frisbee in a park.  
+Decomposable Caption: [A dog] [fetching a frisbee] [in a park]
+
+Answer as concisely as possible.
