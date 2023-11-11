@@ -140,9 +140,9 @@ Notes:
     ```
   * The maximum number of iterative-refinement steps can be controlled by `max_update_steps` parameter. More iterative refinement can potentially help get better image outputs. Eval&Refine can adaptively adjust the actual number of refinement steps by monitoring the DA-Score.
 
-  * The threshold for what is considered as a good enough output it controlled by the `dascore_threshold=0.85` and `assertion_alignment_threshold=0.75`. The iterative refinement process considers the final output image to be good enough if the overall DA-Score is greator the `dascore_threshold` or all individual alignment-scores for each assertion are greator then `assertion_alignment_threshold`
+  * The threshold for what is considered as a "good enough output" is controlled by the `dascore_threshold=0.85` and `assertion_alignment_threshold=0.75`. The iterative refinement process considers the final output image to be good enough if the overall DA-Score is greator than the `dascore_threshold`, or, if individual alignment-scores for each assertion are greator than `assertion_alignment_threshold`
 
-  * Reducing the above thresolds can lead to faster convergence at cost of poor image quality and vice versa.
+  * Reducing the above thresolds can lead to faster convergence at cost of poor T2I alignment and vice versa.
 
  * Finally, we can visualize how the iterative refinement process gradually improves the generated image outputs by setting `verbose=True` while calling the pipeline.
  ```python

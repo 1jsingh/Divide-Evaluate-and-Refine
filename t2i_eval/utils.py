@@ -66,7 +66,7 @@ def generate_prompt_decomposition(prompt):
 
 def generate_questions(prompt):
     decomposable_prompt = generate_prompt_decomposition(prompt)
-    with open('t2i_eval/disjoint-question-gen-prompt-input') as f:
+    with open('t2i_eval/disjoint-question-gen-input') as f:
         message = f.read()
     message = message.format(decomposable_prompt)
 
